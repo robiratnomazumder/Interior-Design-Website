@@ -1,0 +1,313 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: none;
+}
+
+.flex-container>* {
+    padding: 0px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+@media all and (min-width: 768px) {
+    footer {
+        -webkit-order: 3;
+        order: 3;
+        font-size: 22px
+    }
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #5f2160;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 65%;
+    position: relative;
+    margin: auto;
+    padding: 12px;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* ***********************  login button ************************ */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .overlay .closebtnn {
+        font-size: 10px;
+    }
+}
+
+
+/* ////////////////////// login button for admin/////////////////////////////////// */
+
+.btn_login_btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+
+/* Gray */
+
+.default:hover {
+    background: #ddd;
+}
+
+
+/*  ///////////////////////      box column   ///////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+}
+
+.col-container {
+    display: table;
+    width: 98%;
+    margin: 14px;
+}
+
+.col {
+    display: table-cell;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col {
+        display: block;
+        width: 100%;
+    }
+}
+
+.body {
+    background-color: #FFFFFF;
+}
+
+div.vertical-line {
+    width: 4px;
+    height: 100%;
+    float: left;
+    border: 1px inset;
+}
+
+.picture {
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    border-radius: 4px;
+    background-color: #5f2160;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 210px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5f2160;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5f2160;
+}

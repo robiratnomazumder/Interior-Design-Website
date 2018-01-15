@@ -1,0 +1,133 @@
+@import "compass/css3";
+.button {
+  border-radius: 4px;
+  background-color: #5f2160;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 13px;
+  width: 198px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* /////////////// contact list ///////////////// */
+table {
+    width:100%;
+}
+table, th, td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 6px;
+    text-align: center;
+}
+td{
+    padding: 8px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #d1a1e0;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: #5f2160;
+    color: white;
+}
+* //////////  delete button /////////// */
+.delete {
+  border-radius: 4px;
+  background-color: #5f2160;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  padding: 13px;
+  width: 198px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.delete:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.dropbtn {
+  border-radius: 4px;
+  background-color: #5f2160;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 210px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5f2160;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #5f2160;
+}

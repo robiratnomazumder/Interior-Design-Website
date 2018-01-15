@@ -1,0 +1,164 @@
+body {
+    background-color: #FFFFFF;
+}
+address { 
+    display: block;
+    font-style: italic;
+    font-size: 18px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em
+} 
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #5f2160;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+	padding: 7px;
+	width:99%;
+	height:90%;
+}
+.col {
+    display: table-cell;
+    padding: 15px;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #5f2160;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 199px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* /////////////////////////////  contact form //////////////////////////// */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+input[type=button] {
+    background-color: #5f2160;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #d2a7f2;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.dropbtn {
+    border-radius: 4px;
+    background-color: #5f2160;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 210px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5f2160;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5f2160;
+}
