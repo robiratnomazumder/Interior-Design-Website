@@ -36,7 +36,7 @@ $jsn=json_decode($jsonData);
 <body style="background-color: #FFFFFF">
 
 <!-- ************************ Buttons *************************** -->
-<div align="center">
+<div style="padding:20px; text-align:center; margin:35px;">
 <a href="admin_page.php"><button class="button"><span> Contact List </span></button></a>
 <a href="signup_page.php"><button class="button" ><span> Signup Admin</span></button></a>
 <a href="admin_gallery.php"><button class="button" ><span>Gallery</span></button></a>    
